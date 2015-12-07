@@ -307,11 +307,11 @@ app.get('/api/favorites', function(request, response) {
 			if(len == 0) {
 				// push sample data
 				// save doc
-				var docName = 'sample_doc';
-				var docDesc = 'A sample Document';
+				var docName = 'test_doc';
+				var docDesc = 'A test Document';
 				db.insert({
 					name : docName,
-					value : 'A sample Document'
+					value : 'A test Document'
 				}, '', function(err, doc) {
 					if(err) {
 						console.log(err);
